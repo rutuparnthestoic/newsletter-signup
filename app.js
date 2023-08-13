@@ -45,6 +45,7 @@ app.post("/", function(req,res){
 
     const request = https.request(url, options, function(response){ 
         var resCode = response.statusCode; 
+        console.log(resCode);
         if(resCode == 200){
                 res.sendFile(__dirname + "/success.html");
             }
