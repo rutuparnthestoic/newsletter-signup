@@ -22,7 +22,7 @@ app.post("/", function(req,res){
     const apiKey = process.env.API_KEY;
     const listKey = process.env.LIST_KEY;
     const X = process.env.X;
-    const url = "https://us" + X +".api.mailchimp.com/3.0/lists/" + listKey; 
+    const url = "https://us14.api.mailchimp.com/3.0/lists/" + listKey; 
     const options = { 
         method: "POST",  
         auth: "rutu51:" + apiKey 
